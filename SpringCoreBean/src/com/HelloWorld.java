@@ -1,6 +1,6 @@
 package com;
-//import org.springframework.stereotype.Component;
-//@Component("hw")
+import org.springframework.stereotype.Component;
+@Component
 public class HelloWorld {
     private String message;
     public void setMessage(String message) {
