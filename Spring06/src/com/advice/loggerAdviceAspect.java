@@ -1,9 +1,7 @@
 package com.advice;
 
-import org.aopalliance.intercept.Joinpoint;
-
-public class loggerAdviceAspect {
-    public void doBefore(Joinpoint jp) {
+public class LoggerAdviceAspect {
+    public void doBefore() {
         System.out.println("开始添加学生");
     }
 }

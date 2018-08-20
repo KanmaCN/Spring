@@ -7,11 +7,11 @@
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="studentServiceImpl" class="com.serviceimpl.studentServiceImpl"/>
-    <bean id="loggerAdviceAspect" class="com.advice.loggerAdviceAspect"/>
+    <bean id="studentServiceImpl" class="com.serviceimpl.StudentServiceImpl"/>
+    <bean id="loggerAdviceAspect" class="com.advice.LoggerAdviceAspect"/>
     <aop:config>
         <aop:aspect id="loggerAdviceAspect" ref="loggerAdviceAspect">
-            <aop:pointcut id="businessService" expression="execution(* com.serviceimpl.*(..))"/>
+            <aop:pointcut id="businessService" expression="execution(* com.service.*.*(..))"/>
             <aop:before method="doBefore" pointcut-ref="businessService"/>
         </aop:aspect>
     </aop:config>

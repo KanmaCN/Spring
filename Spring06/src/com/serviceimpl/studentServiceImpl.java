@@ -1,10 +1,10 @@
 package com.serviceimpl;
 
-import com.service.SdudenService;
+import com.service.StudentService;
 
-public class studentServiceImpl implements SdudenService{
+public class StudentServiceImpl implements StudentService {
     @Override
     public void addStudent(String name) {
-        System.out.println("添加了学生：+name");
+        System.out.println("添加了学生："+ name);
     }
 }
